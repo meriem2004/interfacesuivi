@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode body {
+  background-color: #2c2c2c;
+  color: #f4f4f9;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  transition: color 0.5s ease;
+}
+
+.dark-mode h2 {
+  color: #f4f4f9;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.theme-toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+}
+
+.dark-mode .theme-toggle-button {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}
+
+/* Positioning for the notification button */
+.notification-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Animation classes */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.dark-mode table {
+  background-color: #444;
+  color: #f4f4f9;
+}
+
+.dark-mode th, .dark-mode td {
+  border: 1px solid #555;
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #555;
+}
+
+.dark-mode tr:hover {
+  background-color: #666;
+}
