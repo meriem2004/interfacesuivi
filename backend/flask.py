@@ -8,8 +8,8 @@ app = Flask(__name__)
 
 # Define your API endpoints
 API_ENDPOINTS = {
-    "Ompic_Typage_With_Simplifie": "http://10.1.23.10:8011/",
-    "Ompic_inference_passif": "http://10.1.23.10:8012/",
+    #"Ompic_Typage_With_Simplifie": "http://10.1.23.10:8011/",
+    #"Ompic_inference_passif": "http://10.1.23.10:8012/",
     # "highco_belg": "http://10.1.11.35:8017/",
     # "highco_france": "http://10.1.11.35:8016/",
     # ...

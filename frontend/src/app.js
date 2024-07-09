@@ -6,7 +6,7 @@ import NotificationButton from './components/notification-button';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './app.css';
 
-const API_URL = 'http://localhost:5000/check';
+const API_URL = 'http://localhost:3000/check';
 
 const App = () => {
   const [apiStatuses, setApiStatuses] = useState([]);
