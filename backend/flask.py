@@ -1,10 +1,12 @@
 import datetime
-from backend.flask import Flask, render_template,request,jsonify
+from flask import Flask, render_template,request,jsonify
 import requests
 import json
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Define your API endpoints
 API_ENDPOINTS = {
